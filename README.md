@@ -1,0 +1,5 @@
+- 👋 Hi, I’m Sam Stieby!
+- 👀 I’m interested in video games, music, baseball, anything computers in general.
+- 🌱 I’m currently learning how to develop websites from scratch!
+- 💞️ I’m looking to collaborate on everything!  Just let me know!
+- 📫 Reach me at my email at stiebys@gmail.com
