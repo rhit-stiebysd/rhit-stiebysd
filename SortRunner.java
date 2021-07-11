@@ -13,11 +13,6 @@ import java.util.TreeSet;
 public class SortRunner {
 	private static Random rand = new Random(); // uses a fixed seed for debugging. Remove the parameter later.
 
-	/**
-	 * Starts here.
-	 *
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// array size must be an int. You will need to use something much larger
 		int size = 1000000;
@@ -32,7 +27,7 @@ public class SortRunner {
 		int[] randomIntArray = getRandomIntArray(size, maxValue);
 		runAllSortsForOneArray(randomIntArray);
 
-		// TODO: Tests 2-4
+		// Tests 2-4
 		// Generate the three other types of arrays (shuffled, almost sorted, almost
 		// reverse sorted)
 		// and run the sorts on those as well.
@@ -60,13 +55,6 @@ public class SortRunner {
 		long startTime, elapsedTime;
 		boolean isSorted = false;
 
-		// TODO: Read this.
-		// We prepare the arrays. This can take as long as needed to shuffle items,
-		// convert
-		// back and forth from ints to Integers and vice-versa, since you aren't timing
-		// this
-		// part. You are just timing the sort itself.
-
 		int[] sortedIntsUsingDefaultSort = array.clone();
 		Integer[] sortedIntegersUsingDefaultSort = copyToIntegerArray(array);
 		Integer[] sortedIntegersUsingHeapSort = sortedIntegersUsingDefaultSort.clone();
@@ -76,7 +64,6 @@ public class SortRunner {
 
 		int size = array.length;
 
-		// What is the default sort for ints? Read the javadoc.
 		// Mergesort
 		startTime = System.currentTimeMillis();
 		Arrays.sort(sortedIntsUsingDefaultSort);
@@ -84,7 +71,6 @@ public class SortRunner {
 		isSorted = verifySort(sortedIntsUsingDefaultSort);
 		displayResults("int", "the default sort", elapsedTime, size, isSorted);
 
-		// What is the default sort for Integers (which are objects that wrap ints)?
 		// Timsort, a different type of Mergesort
 		startTime = System.currentTimeMillis();
 		Arrays.sort(sortedIntegersUsingDefaultSort);
@@ -93,7 +79,6 @@ public class SortRunner {
 		displayResults("Integer", "the default sort", elapsedTime, size, isSorted);
 
 		// TreeSet Sorting
-
 		TreeSet<Integer> set = new TreeSet<Integer>();
 		ArrayList<Integer> dupList = new ArrayList<Integer>();
 		startTime = System.currentTimeMillis();
@@ -119,7 +104,6 @@ public class SortRunner {
 		displayResults("TreeSet", "the tree sort", elapsedTime, size, isSorted);
 
 		// Quicksort sorting
-
 		startTime = System.currentTimeMillis();
 		Quicksort.sort(sortedIntsUsingQuickSort);
 		elapsedTime = (System.currentTimeMillis() - startTime);
@@ -127,7 +111,6 @@ public class SortRunner {
 		displayResults("QuickSort", "quicksort", elapsedTime, size, isSorted);
 
 		// BinaryHeap sorting
-
 		startTime = System.currentTimeMillis();
 		BinaryHeap.sort(sortedIntegersUsingHeapSort, Integer.class);
 		elapsedTime = (System.currentTimeMillis() - startTime);
