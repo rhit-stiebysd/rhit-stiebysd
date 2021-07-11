@@ -1,0 +1,23 @@
+level5
+
+Platform
+corner: 0 175
+size: 200 25
+
+Platform
+corner: 900 500
+size: 175 40
+
+Rocket
+center: 150 
+isBuilt: true
+fuelNeeded: -1
+
+Alien
+type: special
+type: special
+type: special
+type: special
+type: regular
+type: regular
+type: regular
