@@ -1,0 +1,17 @@
+level2
+
+Platform
+corner: 300 300
+size: 200 45
+
+Platform 
+corner: 100 200
+size: 75 25
+
+Rocket
+center: 700
+isBuilt: true
+fuelNeeded: 1
+
+Alien
+type: regular
