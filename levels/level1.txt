@@ -1,6 +1,0 @@
-level1
-
-Rocket
-center: 640
-isBuilt: false
-fuelNeeded: 1
